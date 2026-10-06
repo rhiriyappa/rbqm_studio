@@ -1,0 +1,16 @@
+[project]
+name = "rbqm-studio"
+version = "0.1.0"
+description = "Local reference implementation of an ML-powered clinical data & risk surveillance platform for CROs"
+requires-python = ">=3.9"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
